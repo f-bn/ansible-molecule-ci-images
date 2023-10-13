@@ -6,4 +6,4 @@ Custom images for Ansible Molecule testing in GitHub Actions.
 
 | Name                      | Tags               | Architectures      |
 | :-------------------------| :------------------| :------------------|
-| [molecule-ubuntu](ubuntu/)| `22.04`           | `x86_64`,`aarch64`  |
+| [molecule-ubuntu](ubuntu/)| `jammy`            | `x86_64`,`aarch64` |
