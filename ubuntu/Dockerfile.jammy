@@ -1,6 +1,6 @@
 ARG RELEASE="jammy"
 
-FROM public.ecr.aws/ubuntu/ubuntu:${RELEASE}_stable
+FROM public.ecr.aws/ubuntu/ubuntu:${RELEASE}
 
 RUN set -ex ; \
     export DEBIAN_FRONTEND=noninteractive; \
