@@ -42,8 +42,6 @@ jobs:
           context: ./ubuntu
           file: ./ubuntu/Dockerfile.${{ matrix.release }}
           push: true
-          build-args: |
-            RELEASE=${{ matrix.release }}
           tags: |
             ${{ secrets.REGISTRY_HUB_USERNAME }}/molecule-ubuntu:${{ matrix.release }}
             ${{ secrets.REGISTRY_HUB_USERNAME }}/molecule-ubuntu:${{ matrix.release }}-${{ env.BUILD_ID }}
