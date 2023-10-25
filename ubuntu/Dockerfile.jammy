@@ -7,7 +7,12 @@ RUN set -ex ; \
     apt update ; \
     apt install -y systemd systemd-sysv iproute2 python3 sudo hostname procps ca-certificates gnupg netcat-openbsd ; \
     apt clean all ; \
-    rm -rf /var/lib/apt/lists/* ;
+    rm -rf \
+      /var/lib/apt/lists/* \
+      /var/cache/debconf/* \
+      /tmp/* \
+      /var/tmp/* \
+      /var/log/* ;
 
 RUN truncate -s0 /etc/machine-id
 
