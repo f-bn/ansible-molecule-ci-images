@@ -5,7 +5,7 @@ ENV container="docker"
 RUN set -ex ; \
     export DEBIAN_FRONTEND=noninteractive; \
     apt update ; \
-    apt install -y systemd systemd-sysv iproute2 python3 sudo hostname procps ca-certificates gnupg ; \
+    apt install -y systemd systemd-sysv iproute2 python3 sudo hostname procps ca-certificates gnupg netcat-openbsd ; \
     apt clean all ; \
     rm -rf /var/lib/apt/lists/* ;
 
