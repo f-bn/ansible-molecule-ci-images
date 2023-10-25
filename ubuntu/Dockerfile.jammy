@@ -1,5 +1,7 @@
 FROM public.ecr.aws/ubuntu/ubuntu:jammy
 
+ENV container="docker"
+
 RUN set -ex ; \
     export DEBIAN_FRONTEND=noninteractive; \
     apt update ; \
